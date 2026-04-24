@@ -44,5 +44,5 @@ jobs:
 
     - name: Docker push
       run: |
-        docker tag frontend:latest 796951667961.dkr.ecr.us-east-2.amazonaws.com/frontend:latest
-        docker push 796951667961.dkr.ecr.us-east-2.amazonaws.com/frontend:latest
+        docker tag frontend:latest 796951667961.dkr.ecr.us-east-2.amazonaws.com/frontend:latest:${GITHUB_RUN_NUMBER}
+        docker push 796951667961.dkr.ecr.us-east-2.amazonaws.com/frontend:latest:${GITHUB_RUN_NUMBER}
